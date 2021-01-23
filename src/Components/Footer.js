@@ -6,7 +6,7 @@ class Footer extends Component {
       var networks = this.props.data.social.map(function (network) {
         return (
           <li key={network.name}>
-            <a href={network.url}>
+            <a href={network.url} target="_blank" rel="noreferrer">
               <i className={network.className}></i>
             </a>
           </li>
@@ -37,7 +37,13 @@ class Footer extends Component {
             </ul>
           </div>
           <div id="go-top">
-            <a className="smoothscroll" title="Back to Top" href="#home">
+            <a
+              className="smoothscroll"
+              target="_blank"
+              rel="noreferrer"
+              title="Back to Top"
+              href="#home"
+            >
               <i className="icon-up-open"></i>
             </a>
           </div>

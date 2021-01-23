@@ -402,7 +402,6 @@ ul#nav li a:hover {
 .data__skillsImage {
   object-fit: contain;
   width: 180px;
-  background-color: transparent;
 }
 /* .bar-expand {
   position: absolute;
@@ -754,7 +753,8 @@ call-to-action .button {
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
 
-#motivational {
+#Motivational,
+#Testimonials {
   background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
   background-size: cover !important;
   -webkit-background-size: cover !important;
@@ -764,24 +764,30 @@ call-to-action .button {
   min-height: 200px;
   width: 100%;
   overflow: hidden;
+  border-bottom: 2px inset white;
 }
-#motivational .text-container {
+#Motivational .text-container,
+#Testimonials .text-container {
   padding-top: 96px;
   padding-bottom: 66px;
 }
-#motivational h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
+#Motivational h1,
+#Testimonials h1 {
+  font: 2.3rem "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
 }
-#motivational h1 span {
+#Motivational h1 span,
+#Testimonials h1 span {
   display: none;
 }
-#motivational .header-col {
+#Motivational .header-col,
+#Testimonials .header-col {
   padding-top: 9px;
 }
-#motivational .header-col h1:before {
+#Motivational .header-col h1:before,
+#Testimonials .header-col h1:before {
   font-family: "FontAwesome";
   content: "\f10d";
   padding-right: 10px;
@@ -793,34 +799,47 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
-#motivational blockquote {
+
+#Motivational blockquote,
+#Testimonials blockquote {
   margin: 0 0px 30px 0px;
   padding-left: 0;
   position: relative;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
-#motivational blockquote:before {
+
+#Motivational blockquote:before,
+#Testimonials blockquote:before {
   content: none;
 }
-#motivational blockquote p {
+
+#Motivational blockquote p,
+#Testimonials blockquote p {
   font-family: "librebaskerville-italic", serif;
   padding: 0;
   font-size: 24px;
   line-height: 48px;
   color: #fff;
 }
-#motivational blockquote cite {
+
+#Motivational blockquote cite,
+#Testimonials blockquote cite {
   display: block;
   font-size: 12px;
   font-style: normal;
   line-height: 18px;
   color: #fff;
 }
-#motivational blockquote cite:before {
+
+#Motivational blockquote cite:before,
+#Testimonials blockquote cite:before {
   content: "\2014 \0020";
 }
-#motivational blockquote cite a,
-#motivational blockquote cite a:visited {
+
+#Motivational blockquote cite a,
+#Motivational blockquote cite a:visited,
+#Testimonials blockquote cite a,
+#Testimonials blockquote cite a:visited {
   color: #8b9798;
   border: none;
 }
@@ -1014,6 +1033,11 @@ call-to-action .button {
   font-size: 15px;
   line-height: 24px;
   width: 65%;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
 }
 #contact input:focus,
 #contact textarea:focus,

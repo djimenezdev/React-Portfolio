@@ -454,6 +454,11 @@
     margin: 0 6px;
   }
 
+  /* resume section */
+  .data__skills {
+    justify-content: center;
+  }
+
   /* footer
    ------------------------------------------------------------------------ */
 

@@ -12,14 +12,6 @@ import ReactVisibilitySensor from "react-visibility-sensor";
 const App = (props) => {
   const [visible, setVisible] = useState("home");
   const [resumeData, setResumeData] = useState({});
-  /*  constructor(props) {
-    super(props);
-    this.state = {
-      visible: "home",
-      resumeData: {},
-    };
-  } */
-
   const getResumeData = () => {
     axios
       .get("/resumeData.json")

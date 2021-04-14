@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import Carousel from "react-material-ui-carousel";
 class Testimonials extends Component {
   render() {
     return (
@@ -9,16 +9,24 @@ class Testimonials extends Component {
             <h1>{this.props.title}</h1>
             <div className="ten columns flex-container">
               <ul className="slides">
-                {this.props.data?.map(function (testimonials) {
-                  return (
-                    <li key={testimonials.user}>
-                      <blockquote>
-                        <p>{testimonials.text}</p>
-                        <cite>{testimonials.user}</cite>
-                      </blockquote>
-                    </li>
-                  );
-                })}
+                <Carousel
+                  navButtonsAlwaysInvisible={true}
+                  indicators={false}
+                  animation="fade"
+                  autoPlay
+                  interval={10000}
+                >
+                  {this.props.data?.map(function (testimonials) {
+                    return (
+                      <li key={testimonials.user}>
+                        <blockquote>
+                          <p>{testimonials.text}</p>
+                          <cite>{testimonials.user}</cite>
+                        </blockquote>
+                      </li>
+                    );
+                  })}
+                </Carousel>
               </ul>
             </div>
           </div>

@@ -255,6 +255,10 @@ ul#nav li a:hover {
   color: #7a7a7a;
 }
 
+.address {
+  color: #fff !important;
+}
+
 .row__profilePic {
   width: 30%;
 }
@@ -761,7 +765,7 @@ call-to-action .button {
   background-attachment: fixed;
 
   position: relative;
-  min-height: 200px;
+  height: 500px;
   width: 100%;
   overflow: hidden;
   border-bottom: 2px inset white;
@@ -769,7 +773,7 @@ call-to-action .button {
 #Motivational .text-container,
 #Testimonials .text-container {
   padding-top: 96px;
-  padding-bottom: 66px;
+  padding-bottom: 36px;
 }
 #Motivational h1,
 #Testimonials h1 {

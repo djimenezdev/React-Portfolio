@@ -8,7 +8,6 @@ import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
 import Portfolio from "./Components/Portfolio";
-
 class App extends Component {
   constructor(props) {
     super(props);
@@ -43,10 +42,6 @@ class App extends Component {
         <Testimonials
           data={this.state.resumeData.testimonials?.clients}
           title="Testimonials"
-        />
-        <Testimonials
-          data={this.state.resumeData.testimonials?.motivational}
-          title="Motivational"
         />
         <Contact data={this.state.resumeData.main} />
         <Footer data={this.state.resumeData.main} />

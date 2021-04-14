@@ -155,7 +155,7 @@
         "title": "Signal Clone built with React Native",
         "category": "Utilizes React Navigation, Firebase and other key React Native Features. To open the app on phone, make sure to have a qr scanner to scan the code on the page and also have Expo Go to open the app which will open when the QR code is scanned",
         "image": "signal-clone-thumbnail.png",
-        "url": "https://todo-app-with-amaanath-2210b.web.app/"
+        "url": "https://expo.io/@djimenez0255/projects/signal-clone"
       },
       {
         "title": "React Built Covid-19 Tracker",

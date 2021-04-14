@@ -1,10 +1,10 @@
 {
   "main": {
     "name": "Daniel Jimenez",
-    "occupation": "Full Stack Developer where I am a Success Coach @CleverProgramer && a Tutor on @Wyzant",
+    "occupation": "Full Stack Developer|Tutor: Want to learn the essentials about web dev👨‍💻 and/or work together, I’d be more than happy to talk!",
     "description": "Always love to take on a challenge and to bring ideas to life",
     "image": "portfolio-img.png",
-    "bio": "My name is Daniel, I'm a Full Stack Developer. Currently I'm working at Clever Programmer as a Success Coach and I'm a Tutor on Wyzant",
+    "bio": "My name is Daniel, I'm a Full Stack Developer who loves to bring ideas to life through the form of websites! And I love being able to teach other aspiring developers the fundamentals of web development to help them take their skills to new heights",
     "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
     "email": "djimenez0255@gmail.com",
     "phone": "+661-544-5098",
@@ -12,7 +12,7 @@
       "city": "California"
     },
     "website": "http://www.timbakerdev.com",
-    "resumedownload": "./resume/Resume.pdf",
+    "resumedownload": "./resume/Technical-Resume.pdf",
     "social": [
       {
         "name": "facebook",
@@ -49,8 +49,8 @@
       {
         "company": "Clever Programmer",
         "title": "Success Coach",
-        "years": "May 2020 - Present",
-        "description": "Teaching Teaching the Fundamentals of Full Stack Development to thousands of students."
+        "years": "May 2020 - Feb 2021",
+        "description": "Taught the Fundamentals of Full Stack Development to thousands of students."
       },
       {
         "company": "Wyzant",
@@ -63,6 +63,12 @@
         "title": "I.T. Intern",
         "years": "June 2019 - August 2019",
         "description": "Help prepare the software and maintain the technology on the school campus"
+      },
+      {
+        "company": "Northrop Grumman",
+        "title": "HIP Intern",
+        "years": "Oct 2019 - April 2020",
+        "description": "Participated in Monthly webinars learning more about the processes of engineering and the types of engineering"
       }
     ],
     "skills": [
@@ -124,16 +130,20 @@
       {
         "name": "NextJs",
         "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Nextjs-logo.svg/800px-Nextjs-logo.svg.png"
+      },
+      {
+        "name": "React Native",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/800px-React-icon.svg.png"
       }
     ]
   },
   "portfolio": {
     "projects": [
       {
-        "title": "WhatsApp Clone",
-        "category": "WhatsApp Clone built with React and Firebase",
-        "image": "whatsApp-clone.jpg",
-        "url": "https://whatsapp-clone-842a7.web.app/"
+        "title": "Netflix Clone - with Stripe Functionality!",
+        "category": "Netflix Clone built with React, Redux, Firebase and more",
+        "image": "netflix-clone.png",
+        "url": "https://netflix-challenge-clone.web.app/"
       },
       {
         "title": "Amazon Clone",
@@ -142,9 +152,9 @@
         "url": "https://clone-stripe.web.app/"
       },
       {
-        "title": "Advanced Todo App",
-        "category": "Todo App built with React, Firebase and other essential tools",
-        "image": "todosApp.png",
+        "title": "Signal Clone built with React Native",
+        "category": "Utilizes React Navigation, Firebase and other key React Native Features. To open the app on phone, make sure to have a qr scanner to scan the code on the page and also have Expo Go to open the app which will open when the QR code is scanned",
+        "image": "signal-clone-thumbnail.png",
         "url": "https://todo-app-with-amaanath-2210b.web.app/"
       },
       {
@@ -168,6 +178,14 @@
     ],
     "clients": [
       {
+        "text": "I rarely come across skilled and talented people who stand out like Daniel. He's an amazing developer, colleague, and friend. I had the pleasure to work with him in a team of success coaches in the Clever Programmer community. We had the opportunity to work together on projects and do coaching for students. He's got amazing skills, work ethic, and he's dedicated. He pushes everyone to their limits and helps unleash them in the process, which I admire a lot. He's also an amazing team player. As a friend and a colleague, Daniel earns my highest recommendation.",
+        "user": "Amaanath Mumtaz(FullStack Developer at Clever Programmer)"
+      },
+      {
+        "text": "Daniel is a talented developer with a thirst for knowledge. I have seen him grow exponentially with his programming skills in the last couple of months. He has gone from building simple JavaScript applications to Full Stack Web applications using libraries and frameworks such as React, Node, Express and Firebase. Given his ability to learn the required skills rapidly and translate them into projects, he would be an excellent asset to any team.",
+        "user": "Gaurav Sen(Software Engineer at Deutsche Telekom AG)"
+      },
+      {
         "text": "very knowledgeable!: Daniel was able to help me understand key concepts in breaking down problems to make it easier to understand them In JavaScript",
         "user": "Jonathan F.(Student)"
       },
@@ -176,8 +194,16 @@
         "user": "Ariella N.(Student)"
       },
       {
-        "text": "Daniel is a talented developer with a thirst for knowledge. I have seen him grow exponentially with his programming skills in the last couple of months. He has gone from building simple JavaScript applications to Full Stack Web applications using libraries and frameworks such as React, Node, Express and Firebase. Given his ability to learn the required skills rapidly and translate them into projects, he would be an excellent asset to any team.",
-        "user": "Gaurav Sen(Software Engineer at Deutsche Telekom AG)"
+        "text": "Very patient and knowledgeable: I hate when a tutor just tells me the answers without explaining the reason. Daniel isn't like this. While he was explaining to me the reasoning behind the action, everything I studied started to come to; he really helped me understand the material I've been studying. He's also very patient. I'm slow in executing code and Daniel was very understanding to this and even encouraged me to take my time. I will definitely be seeking tutoring from Daniel again.",
+        "user": "Erica C.(Student)"
+      },
+      {
+        "text": "Knowledgeable and patient tutor:I had a wonderful lesson with Daniel once again! Daniel is both an excellent developer and an excellent tutor. I look forward to our next lesson together. Thanks Daniel!",
+        "user": "Zain H."
+      },
+      {
+        "text": "Patient, thoughtful and structured: My son (11) really enjoys working w/ Daniel. He's patient and communicates well. I like that he has a structured approach to his teachings. We agreed upon a syllabus so I know what the end goal is (having little coding experience myself).",
+        "user": "Evan D."
       }
     ]
   }

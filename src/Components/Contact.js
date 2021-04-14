@@ -1,5 +1,4 @@
 import React, { useReducer, useState } from "react";
-import emailjs from "emailjs-com";
 
 const Contact = ({ data }) => {
   const [success, setSuccess] = useState("");
@@ -42,7 +41,6 @@ const Contact = ({ data }) => {
   // initialize EmailJS
 
   const handleClick = (e) => {
-    e.preventDefault();
     if (
       formInfo.formStates[0].length === 0 ||
       formInfo.formStates[1].length === 0 ||
@@ -53,26 +51,6 @@ const Contact = ({ data }) => {
         setSuccess("");
       }, 3000);
     } else {
-      emailjs
-        .sendForm(
-          "service_01d5ufv",
-          "template_ddpf98u",
-          "#contactForm",
-          "user_UJTCPCgJZqzrv6cd3rWgl"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-
-      dispatch({ type: "email", emailInput: "" });
-      dispatch({ type: "subject", subjectInput: "" });
-      dispatch({ type: "message", messageInput: "" });
-
       // displays success message
       setSuccess(true);
 
@@ -99,8 +77,15 @@ const Contact = ({ data }) => {
 
       <div className="row">
         <div className="eight columns">
-          <form id="contactForm" name="contactForm">
+          <form
+            action="https://formsubmit.co/djimenez0255@gmail.com"
+            id="contactForm"
+            name="contactForm"
+            method="POST"
+          >
             <fieldset>
+              <input type="hidden" name="_next" value="http://localhost:3000" />
+              <input type="hidden" name="_template" value="box" />
               <div>
                 <label htmlFor="contactName">
                   Name <span className="required">*</span>

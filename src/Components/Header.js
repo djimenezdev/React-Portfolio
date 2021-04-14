@@ -1,6 +1,30 @@
 import React, { Component } from "react";
 
 class Header extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      navBG: false,
+    };
+    this.transitionNav = this.transitionNav.bind(this);
+  }
+
+  transitionNav() {
+    if (window.scrollY < 100) {
+      this.setState({ navBG: false });
+    } else {
+      this.setState({ navBG: true });
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.transitionNav);
+  }
+
+  componentWillUnmount() {
+    return window.removeEventListener("scroll", this.transitionNav);
+  }
+
   render() {
     if (this.props.data) {
       var name = this.props.data.name;
@@ -17,10 +41,10 @@ class Header extends Component {
         );
       });
     }
-
+    console.log(this.props.visibleState);
     return (
       <header id="home">
-        <nav id="nav-wrap">
+        <nav id="nav-wrap" className={this.state.navBG ? "opaque" : ""}>
           <a className="mobile-btn" href="#nav-wrap" title="Show navigation">
             Show navigation
           </a>
@@ -29,40 +53,38 @@ class Header extends Component {
           </a>
 
           <ul id="nav" className="nav">
-            <li className="current">
-              <a className="smoothscroll" href="#home">
-                Home
-              </a>
+            <li className={this.props.visibleState === "home" ? "current" : ""}>
+              <a href="#home">Home</a>
             </li>
-            <li>
-              <a className="smoothscroll" href="#about">
-                About
-              </a>
+            <li
+              className={this.props.visibleState === "about" ? "current" : ""}
+            >
+              <a href="#about">About</a>
             </li>
-            <li>
-              <a className="smoothscroll" href="#resume">
-                Resume
-              </a>
+            <li
+              className={this.props.visibleState === "resume" ? "current" : ""}
+            >
+              <a href="#resume">Resume</a>
             </li>
-            <li>
-              <a className="smoothscroll" href="#portfolio">
-                Works
-              </a>
+            <li
+              className={
+                this.props.visibleState === "portfolio" ? "current" : ""
+              }
+            >
+              <a href="#portfolio">Works</a>
             </li>
-            <li>
-              <a className="smoothscroll" href="#Testimonials">
-                Testimonials
-              </a>
+            <li
+              className={
+                this.props.visibleState === "Testimonials" ? "current" : ""
+              }
+            >
+              <a href="#Testimonials">Testimonials</a>
             </li>
-            <li>
-              <a className="smoothscroll" href="#Motivational">
-                Motivational
-              </a>
-            </li>
-            <li>
-              <a className="smoothscroll" href="#contact">
-                Contact
-              </a>
+
+            <li
+              className={this.props.visibleState === "contact" ? "current" : ""}
+            >
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </nav>

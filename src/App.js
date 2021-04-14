@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 import Header from "./Components/Header";
@@ -8,46 +8,83 @@ import Resume from "./Components/Resume";
 import Contact from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
 import Portfolio from "./Components/Portfolio";
-class App extends Component {
-  constructor(props) {
+import ReactVisibilitySensor from "react-visibility-sensor";
+const App = (props) => {
+  const [visible, setVisible] = useState("home");
+  const [resumeData, setResumeData] = useState({});
+  /*  constructor(props) {
     super(props);
     this.state = {
-      foo: "bar",
+      visible: "home",
       resumeData: {},
     };
-  }
+  } */
 
-  getResumeData() {
+  const getResumeData = () => {
     axios
       .get("/resumeData.json")
       .then((response) => {
-        this.setState({ resumeData: response.data });
+        setResumeData(response.data);
       })
       .catch((err) => {
         console.log(err.message);
       });
-  }
+  };
+  useEffect(() => {
+    if (!resumeData?.portfolio?.projects) {
+      getResumeData();
+    }
+  }, [resumeData]);
 
-  componentDidMount() {
-    this.getResumeData();
-  }
+  return (
+    <div className="App">
+      <ReactVisibilitySensor
+        delayedCall
+        partialVisibility="top"
+        onChange={(isVisible) => isVisible && setVisible("home")}
+      >
+        <Header data={resumeData.main} visibleState={visible} />
+      </ReactVisibilitySensor>
 
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main} />
-        <About data={this.state.resumeData.main} />
-        <Resume data={this.state.resumeData.resume} />
-        <Portfolio data={this.state.resumeData.portfolio} />
+      <ReactVisibilitySensor
+        onChange={(isVisible) => isVisible && setVisible("about")}
+      >
+        <About data={resumeData.main} />
+      </ReactVisibilitySensor>
+
+      <ReactVisibilitySensor
+        partialVisibility="top"
+        minTopValue={300}
+        onChange={(isVisible) => isVisible && setVisible("resume")}
+      >
+        <Resume data={resumeData.resume} />
+      </ReactVisibilitySensor>
+
+      <Portfolio
+        partialVisibility="bottom"
+        data={resumeData?.portfolio?.projects}
+        updateVis={() => setVisible("portfolio")}
+      />
+
+      <ReactVisibilitySensor
+        onChange={(isVisible) => isVisible && setVisible("Testimonials")}
+      >
         <Testimonials
-          data={this.state.resumeData.testimonials?.clients}
+          data={resumeData.testimonials?.clients}
           title="Testimonials"
         />
-        <Contact data={this.state.resumeData.main} />
-        <Footer data={this.state.resumeData.main} />
-      </div>
-    );
-  }
-}
+      </ReactVisibilitySensor>
+      <ReactVisibilitySensor
+        partialVisibility="top"
+        minTopValue={15}
+        onChange={(isVisible) => isVisible && setVisible("contact")}
+      >
+        <Contact data={resumeData.main} />
+      </ReactVisibilitySensor>
+
+      <Footer data={resumeData.main} />
+    </div>
+  );
+};
 
 export default App;

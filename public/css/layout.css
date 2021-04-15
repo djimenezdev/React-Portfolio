@@ -757,7 +757,6 @@ call-to-action .button {
 /* g. Testimonials
 /* ------------------------------------------------------------------ */
 
-#Motivational,
 #Testimonials {
   background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
   background-size: cover !important;
@@ -770,27 +769,27 @@ call-to-action .button {
   overflow: hidden;
   border-bottom: 2px inset white;
 }
-#Motivational .text-container,
+
 #Testimonials .text-container {
-  padding-top: 96px;
+  padding-top: 36px;
   padding-bottom: 36px;
 }
-#Motivational h1,
+
 #Testimonials h1 {
   font: 2.3rem "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #fff;
 }
-#Motivational h1 span,
+
 #Testimonials h1 span {
   display: none;
 }
-#Motivational .header-col,
+
 #Testimonials .header-col {
   padding-top: 9px;
 }
-#Motivational .header-col h1:before,
+
 #Testimonials .header-col h1:before {
   font-family: "FontAwesome";
   content: "\f10d";
@@ -804,7 +803,6 @@ call-to-action .button {
 
 /*	Blockquotes */
 
-#Motivational blockquote,
 #Testimonials blockquote {
   margin: 0 0px 30px 0px;
   padding-left: 0;
@@ -812,36 +810,31 @@ call-to-action .button {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
 
-#Motivational blockquote:before,
 #Testimonials blockquote:before {
   content: none;
 }
 
-#Motivational blockquote p,
 #Testimonials blockquote p {
   font-family: "librebaskerville-italic", serif;
   padding: 0;
-  font-size: 24px;
+  font-size: 19px;
   line-height: 48px;
   color: #fff;
 }
 
-#Motivational blockquote cite,
 #Testimonials blockquote cite {
   display: block;
-  font-size: 12px;
+  font-size: 14px;
   font-style: normal;
   line-height: 18px;
-  color: #fff;
+  color: #f06000;
+  font-weight: bold;
 }
 
-#Motivational blockquote cite:before,
 #Testimonials blockquote cite:before {
   content: "\2014 \0020";
 }
 
-#Motivational blockquote cite a,
-#Motivational blockquote cite a:visited,
 #Testimonials blockquote cite a,
 #Testimonials blockquote cite a:visited {
   color: #8b9798;
@@ -1207,3 +1200,13 @@ footer .social-links li:first-child {
 #go-top a:hover {
   background-color: #0f9095;
 }
+
+/* @media only screen and (max-width: 850px) {
+  #Testimonials {
+    height: 95vh;
+  }
+
+  #Testimonials .text-container {
+    padding-top: 40px;
+  }
+} */

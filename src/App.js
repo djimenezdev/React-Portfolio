@@ -60,6 +60,8 @@ const App = (props) => {
 
       <ReactVisibilitySensor
         onChange={(isVisible) => isVisible && setVisible("Testimonials")}
+        partialVisibility="top"
+        minTopValue={150}
       >
         <Testimonials
           data={resumeData.testimonials?.clients}
@@ -68,7 +70,7 @@ const App = (props) => {
       </ReactVisibilitySensor>
       <ReactVisibilitySensor
         partialVisibility="top"
-        minTopValue={15}
+        minTopValue={400}
         onChange={(isVisible) => isVisible && setVisible("contact")}
       >
         <Contact data={resumeData.main} />

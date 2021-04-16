@@ -36,7 +36,10 @@ const Portfolio = (props) => {
   }
 
   return (
-    <ReactVisibilitySensor onChange={props.updateVis}>
+    <ReactVisibilitySensor
+      onChange={props.updateVis}
+      partialVisibility="bottom"
+    >
       <section id="portfolio">
         <div className="row">
           <div className="twelve columns collapsed">

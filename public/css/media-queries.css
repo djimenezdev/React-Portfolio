@@ -63,7 +63,7 @@
 
 @media only screen and (max-width: 376px) {
   #Testimonials h1 {
-    margin-left:20px;
+    margin-left: 20px;
   }
   #Testimonials blockquote p {
     font-size: 12px;
@@ -74,9 +74,9 @@
   }
 
   #Testimonials > div .row > div {
-    margin-top:50px;
+    margin-top: 50px;
+  }
 }
-
 /* screenwidth less than 1024px
 --------------------------------------------------------------------- */
 @media only screen and (max-width: 1024px) {

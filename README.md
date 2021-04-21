@@ -27,6 +27,8 @@ it your own by following the tips below!
 
 ## Example of How to Set it up Video
 
+<code>Video will be added soon</code>
+
 ## Credits
 
 #### All Credits Goes to Tim Baker <a href='https://github.com/tbakerx/react-resume-template'>Original Repo</a>

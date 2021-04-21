@@ -100,6 +100,8 @@ const Contact = ({ data }) => {
                   onChange={(e) =>
                     dispatch({ type: "email", emailInput: e.target.value })
                   }
+                  pattern="[^@\s]+@[^@\s]+\.[^@\s]+"
+                  required
                 />
               </div>
 
@@ -115,6 +117,7 @@ const Contact = ({ data }) => {
                   onChange={(e) =>
                     dispatch({ type: "subject", subjectInput: e.target.value })
                   }
+                  required
                 />
               </div>
 
@@ -132,11 +135,21 @@ const Contact = ({ data }) => {
                   rows="15"
                   id="contactMessage"
                   name="contactMessage"
+                  required
                 ></textarea>
               </div>
 
               <div>
-                <button type="submit" onClick={handleClick} className="submit">
+                <button
+                  disabled={
+                    formInfo.formStates[0].length === 0 &&
+                    formInfo.formStates[1].length === 0 &&
+                    formInfo.formStates[2].length === 0
+                  }
+                  type="submit"
+                  onClick={handleClick}
+                  className="submit"
+                >
                   Submit
                 </button>
                 <span id="image-loader">

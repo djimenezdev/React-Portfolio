@@ -18,6 +18,17 @@
 
 ===================================================================== */
 
+/* 
+
+  Variables
+
+*/
+
+:root {
+  --orange-theme: #f06000;
+  --white: #fff;
+}
+
 /* ------------------------------------------------------------------ */
 /* a. General Styles
 /* ------------------------------------------------------------------ */
@@ -65,7 +76,7 @@ header .banner-text {
 
 header .banner-text h1 {
   font: 90px/1.1em "opensans-bold", sans-serif;
-  color: #fff;
+  color: var(--white);
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
@@ -76,10 +87,9 @@ header .banner-text h3 {
   margin: 0 auto;
 }
 .bannerText__bgS {
-  background-color: #fff;
+  background-color: var(--white);
   font: 18px/1.9em "librebaskerville-regular", serif;
-  color: aqua;
-
+  color: var(--orange-theme);
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
   padding: 4px;
   border-radius: 3px;
@@ -89,7 +99,7 @@ header .banner-text h3 {
   -o-border-radius: 3px;
 }
 .bannerText__span {
-  color: #fff;
+  color: var(--white);
   font-weight: 500;
   font: 18px/1.9em "librebaskerville-regular", serif;
   margin-left: 2px;
@@ -114,10 +124,10 @@ header .social li {
   padding: 0;
 }
 header .social li a {
-  color: #fff;
+  color: var(--white);
 }
 header .social li a:hover {
-  color: #11abb0;
+  color: var(--orange-theme);
 }
 
 /* scrolldown link */
@@ -126,13 +136,13 @@ header .scrolldown a {
   bottom: 30px;
   left: 50%;
   margin-left: -29px;
-  color: #fff;
+  color: var(--white);
   display: block;
   height: 42px;
   width: 42px;
   font-size: 42px;
   line-height: 42px;
-  color: #fff;
+  color: var(--white);
   border-radius: 100%;
 
   -webkit-transition: all 0.3s ease-in-out;
@@ -141,7 +151,7 @@ header .scrolldown a {
   transition: all 0.3s ease-in-out;
 }
 header .scrolldown a:hover {
-  color: #11abb0;
+  color: var(--orange-theme);
 }
 
 /* primary navigation
@@ -199,7 +209,7 @@ ul#nav li a {
   line-height: 32px;
   text-decoration: none;
   text-align: left;
-  color: #fff;
+  color: var(--white);
   font-size: 1.4rem;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
@@ -212,11 +222,11 @@ ul#nav li a:active {
   background-color: transparent !important;
 }
 ul#nav li.current a {
-  color: #f06000;
+  color: var(--orange-theme);
 }
 
 ul#nav li a:hover {
-  color: #f06000;
+  color: var(--orange-theme);
 }
 
 /* ------------------------------------------------------------------ */
@@ -238,16 +248,16 @@ ul#nav li a:hover {
 
 #about a,
 #about a:visited {
-  color: #fff;
+  color: var(--white);
 }
 #about a:hover,
 #about a:focus {
-  color: #11abb0;
+  color: var(--orange-theme);
 }
 
 #about h2 {
   font: 22px/30px "opensans-bold", sans-serif;
-  color: #fff;
+  color: var(--white);
   margin-bottom: 12px;
 }
 #about p {
@@ -256,7 +266,7 @@ ul#nav li a:hover {
 }
 
 .address {
-  color: #fff !important;
+  color: var(--white) !important;
 }
 
 .row__profilePic {
@@ -292,7 +302,7 @@ ul#nav li a:hover {
   background: #444;
 }
 #about .download .button:hover {
-  background: #fff;
+  background: var(--white);
   color: #2b2b2b;
 }
 #about .download .button i {
@@ -305,7 +315,7 @@ ul#nav li a:hover {
 /* ------------------------------------------------------------------ */
 
 #resume {
-  background: #fff;
+  background: var(--white);
   padding-top: 90px;
   padding-bottom: 72px;
   overflow: hidden;
@@ -313,7 +323,7 @@ ul#nav li a:hover {
 
 #resume a,
 #resume a:visited {
-  color: #11abb0;
+  color: var(--orange-theme);
 }
 #resume a:hover,
 #resume a:focus {
@@ -326,7 +336,7 @@ ul#nav li a:hover {
   letter-spacing: 1px;
 }
 #resume h1 span {
-  border-bottom: 3px solid #11abb0;
+  border-bottom: 3px solid var(--orange-theme);
   padding-bottom: 6px;
 }
 #resume h3 {
@@ -536,7 +546,7 @@ ul#nav li a:hover {
   margin-bottom: 36px;
 }
 .portfolio-item .item-wrap {
-  background: #fff;
+  background: var(--white);
 
   overflow: hidden;
   position: relative;
@@ -573,7 +583,7 @@ ul#nav li a:hover {
 }
 .portfolio-item .item-wrap .link-icon {
   display: block;
-  color: #fff;
+  color: var(--white);
   height: 30px;
   width: 30px;
   font-size: 18px;
@@ -603,7 +613,7 @@ ul#nav li a:hover {
 }
 .portfolio-item .portfolio-item-meta h5 {
   font: 14px/21px "opensans-bold", sans-serif;
-  color: #fff;
+  color: var(--white);
 }
 .portfolio-item .portfolio-item-meta p {
   font: 12px/18px "opensans-light", sans-serif;
@@ -626,7 +636,7 @@ ul#nav li a:hover {
 /* popup modal */
 .popup-modal {
   max-width: 550px;
-  background: #fff;
+  background: var(--white);
   position: relative;
   margin: 0 auto;
 }
@@ -660,7 +670,7 @@ ul#nav li a:hover {
   text-align: left;
 }
 .popup-modal .link-box a {
-  color: #fff;
+  color: var(--white);
   font: 11px/21px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -707,7 +717,7 @@ ul#nav li a:hover {
   font: 18px/24px "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: var(--white);
 }
 #call-to-action h1 span {
   display: none;
@@ -720,7 +730,7 @@ ul#nav li a:hover {
   line-height: 72px;
   text-align: left;
   float: left;
-  color: #fff;
+  color: var(--white);
 }
 #call-to-action .action {
   margin-top: 12px;
@@ -739,13 +749,13 @@ ul#nav li a:hover {
 }
 /*#
 call-to-action .button {
-	color:#fff;
+	color:var(--white);
    background: #0D0D0D;
 }
 */
 #call-to-action .button:hover,
 #call-to-action .button:active {
-  background: #ffffff;
+  background: var(--white) fff;
   color: #0d0d0d;
 }
 #call-to-action p span {
@@ -779,7 +789,7 @@ call-to-action .button {
   font: 2.3rem "opensans-bold", sans-serif;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: var(--white);
 }
 
 #Testimonials h1 span {
@@ -798,7 +808,7 @@ call-to-action .button {
   line-height: 72px;
   text-align: left;
   float: left;
-  color: #fff;
+  color: var(--white);
 }
 
 /*	Blockquotes */
@@ -819,7 +829,7 @@ call-to-action .button {
   padding: 0;
   font-size: 19px;
   line-height: 48px;
-  color: #fff;
+  color: var(--white);
 }
 
 #Testimonials blockquote cite {
@@ -827,7 +837,7 @@ call-to-action .button {
   font-size: 14px;
   font-style: normal;
   line-height: 18px;
-  color: #f06000;
+  color: var(--orange-theme);
   font-weight: bold;
 }
 
@@ -944,7 +954,7 @@ call-to-action .button {
   background: rgba(255, 255, 255, 0.7);
 }
 .flex-control-paging li a.flex-active {
-  background: #fff;
+  background: var(--white);
   background: rgba(255, 255, 255, 0.9);
   cursor: default;
 }
@@ -969,7 +979,7 @@ call-to-action .button {
 }
 #contact a:hover,
 #contact a:focus {
-  color: #fff;
+  color: var(--white);
 }
 
 #contact h1 {
@@ -1030,22 +1040,23 @@ call-to-action .button {
   font-size: 15px;
   line-height: 24px;
   width: 65%;
-  transition: all 1s;
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
 }
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
-  color: #fff;
-  background-color: #11abb0;
+  color: var(--white);
+  border: 2px solid var(--orange-theme);
+  background-color: #373233 !important;
 }
 #contact button.submit {
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #fff;
+  color: var(--white);
   background: #0d0d0d;
   border: none;
   cursor: pointer;
@@ -1056,10 +1067,10 @@ call-to-action .button {
 }
 #contact button.submit:hover {
   color: #0d0d0d;
-  background: #fff;
+  background: var(--white);
 }
 #contact span.required {
-  color: #11abb0;
+  color: var(--orange-theme);
   font-size: 13px;
 }
 #message-warning,
@@ -1122,11 +1133,11 @@ footer {
 
 footer a,
 footer a:visited {
-  color: aqua;
+  color: var(--orange-theme);
 }
 footer a:hover,
 footer a:focus {
-  color: #fff;
+  color: var(--white);
 }
 
 /* copyright */
@@ -1164,7 +1175,7 @@ footer .social-links li {
   margin: 0;
   padding: 0;
   margin-left: 42px;
-  color: #f06000;
+  color: var(--orange-theme) !important;
 }
 
 footer .social-links li:first-child {
@@ -1192,13 +1203,13 @@ footer .social-links li:first-child {
   -ms-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 
-  color: #fff;
+  color: var(--white);
   font-size: 21px;
   line-height: 60px;
   border-radius: 100%;
 }
 #go-top a:hover {
-  background-color: #0f9095;
+  background-color: var(--orange-theme);
 }
 
 /* @media only screen and (max-width: 850px) {

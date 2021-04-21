@@ -84,7 +84,7 @@ const Contact = ({ data }) => {
             method="POST"
           >
             <fieldset>
-              <input type="hidden" name="_next" value="http://localhost:3000" />
+              <input type="hidden" name="_next" value={window.location.href} />
               <input type="hidden" name="_template" value="box" />
               <div>
                 <label htmlFor="contactName">

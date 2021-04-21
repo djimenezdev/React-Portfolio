@@ -41,7 +41,6 @@ class Header extends Component {
         );
       });
     }
-    console.log(this.props.visibleState);
     return (
       <header id="home">
         <nav id="nav-wrap" className={this.state.navBG ? "opaque" : ""}>

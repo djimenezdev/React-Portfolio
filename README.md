@@ -1,7 +1,7 @@
 # Link to Live Demo Below
 
 <ul>
-<li><a href="https://react-resume-template.herokuapp.com/">LIVE DEMO</a></li>
+<li><a href="https://djimenezdev.com/">LIVE DEMO</a></li>
 </ul>
 
 ## Description
@@ -15,15 +15,15 @@ it your own by following the tips below!
 
 - Download the zip folder from Github and unzip it
   Here is the link to download zip 👉
-  <a href='https://github.com/tbakerx/react-resume-template'>HERE</a>
+  <a href='https://github.com/danieljimenez0255/Tim-Baker-Updated-Template'>HERE</a>
 - Open the folder in VS Code
-- Edit <code>public/resumeData.json</code> and add your personal details and projects
+- Edit <code>public/resumeData.json</code> and add your personal details and projects and such
 - Open terminal in VS Code
-- RUN <code>npm init</code> , this command can be used to set up a new or existing npm package
+- RUN <code>npm init</code> , this command can be used to set up a new or existing npm package for your portfolio
 - RUN <code>npm install</code> , this command pulls out all the require node modules
 - RUN <code>npm run build</code>, this command will create a build folder for you
 
-- Then deploy using a hosting service of your desire! But below is a video showing how to deploy with firebase:
+- Then deploy using a hosting service of your desire! But below is a video showing how to get started with the Portfolio to make it your own and how to deploy it live
 
 ## Example of How to Set it up Video
 

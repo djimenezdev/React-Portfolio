@@ -27,6 +27,7 @@ yarn-error.log*
 .firebase/
 .firebaserc
 firebase.json
+src/config
 
-
+# public
 public/resumeData.json

@@ -9,9 +9,12 @@ import Contact from "./Components/Contact";
 import Testimonials from "./Components/Testimonials";
 import Portfolio from "./Components/Portfolio";
 import ReactVisibilitySensor from "react-visibility-sensor";
+import { reactGoogleAnalytics } from "./config/firebase";
+
 const App = (props) => {
   const [visible, setVisible] = useState("home");
   const [resumeData, setResumeData] = useState({});
+
   const getResumeData = () => {
     axios
       .get("/resumeData.json")
@@ -22,6 +25,12 @@ const App = (props) => {
         console.log(err.message);
       });
   };
+
+  // initializes google analytics
+  // this allows for you to see how many people load your portfolio, allows for you to see how users engage with your application,  etc
+  reactGoogleAnalytics.setCurrentScreen(window.location.pathname);
+  reactGoogleAnalytics.logEvent("screen_view");
+
   useEffect(() => {
     if (!resumeData?.portfolio?.projects) {
       getResumeData();
